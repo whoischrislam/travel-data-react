@@ -1,0 +1,239 @@
+/*Page wide styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: black;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin:0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  font-weight: 400;
+  color: #918E9B;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5625em;
+  line-height: 30px;
+  color: #2B283A;
+  margin:0;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+  color: #2B283A;
+  margin:0;
+}
+
+/*Nav bar styles*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff8f5c;
+  font-size: 0.88em;
+  height:10vh;
+}
+
+.navbar p {
+  margin-left: 7px;
+  color:white;
+}
+
+/* Main container styles */
+
+.contentWrapper {
+  width:93vw;
+  margin-top: 5.09vh;
+  margin-bottom: 5.09vh;
+}
+
+/*Row styles*/
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  column-gap: 3.64vh;
+}
+
+.media {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 60vh;
+  border-radius: 0.3125em;
+}
+
+.content {
+  padding: 3.64vh 0.18vw 3.64vh 0;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location p {
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  padding-left: 0.7vw;
+  padding-right: 2.18vw;
+  word-break:break-all;
+}
+
+.content h1 {
+  margin-top:0.73vh;
+}
+
+.date {
+  font-weight: 700;
+  margin-top:2.55vh;
+}
+
+.description {
+  margin-top: 0.18vh;
+}
+
+hr {
+  border: 1px solid #F5F5F5;
+}
+
+.footerbar {
+  display: flex;
+  justify-content: center;
+  background-color: #ff8f5c;
+  padding: 2vh 2vw;
+}
+
+.footerbar a {
+  color:white;
+  font-weight: 700;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 280px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .media {
+      width:100%;
+      height:50vh;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .media {
+      width:100%;
+      height:50vh;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .media {
+      width:100%;
+      height:50vh;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .media {
+      width:100%;
+      height:50vh;
+    }
+}
+
+/* Portrait and Landscape iPhone*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .media {
+      width:100%;
+      height:30vh;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 569px) 
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .media {
+      width:100%;
+      height:50vh;
+    }
+
+}
